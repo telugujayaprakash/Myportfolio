@@ -1,7 +1,12 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #1a202c;
 }
 
 .menu {
@@ -12,9 +17,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    /* Center the menu horizontally */
     margin-top: 20px;
-    /* Adjust the space between the name and the menu */
 }
 
 .menu li {
@@ -26,16 +29,13 @@
     transition: 0.5s;
     transition-delay: calc(0.1s * var(--i));
     opacity: 0;
-    /* Hide the items initially */
     pointer-events: none;
-    /* Disable interactions initially */
+    z-index: 1;
 }
 
 .menu.active li {
     opacity: 1;
-    /* Show the items */
     pointer-events: auto;
-    /* Enable interactions */
 }
 
 .toggle {
@@ -60,14 +60,78 @@
 
 .menu li a {
     display: flex;
-    Justify-content: center;
+    justify-content: center;
     align-items: center;
     width: 40px;
-     height:40px;
-    background-color: white ;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.256);
     border-radius: 50%;
     transform: rotate(calc(360deg/-4 * var(--i)));
 }
-.name{
+
+.name {
     font-family: Zodiak;
+}
+
+/* Center the name and icons */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .menu {
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu li {
+        transform-origin: 75px;
+    }
+
+    .toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+
+    .menu li a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu li {
+        transform-origin: 60px;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25em;
+    }
+
+    .menu li a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
 }

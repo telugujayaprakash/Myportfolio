@@ -1,7 +1,6 @@
-/* Projects.css */
+/* Projects.css
 
 .projects-section {
-    /* background-color: #1a202c; */
     min-height: 100vh;
     padding: 5rem 0;
   }
@@ -90,4 +89,108 @@
   .project-button:hover {
     background-color: #2b6cb0;
   }
+   */
+   .projects-section {
+    min-height: 100vh;
+    padding: 5rem 0;
+}
   
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+  
+.section-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-in-out;
+  background: -webkit-linear-gradient(#ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.project-card {
+    background: #2d3748; 
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+    margin: 1rem;
+    width: calc(33.333% - 2rem); 
+    max-width: 350px;
+    position: relative; 
+    z-index: 1; 
+}
+  
+.project-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgb(38, 98, 240);
+    z-index: 10;
+}
+  
+.image-container {
+    position: relative;
+    height: 0;
+    padding-top: 56.25%; 
+}
+  
+.project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #edf2f7;
+    margin: 1rem 0 0.5rem;
+}
+  
+.project-description {
+    color: #e2e8f0;
+    padding: 0 1rem;
+    font-size: 0.875rem; 
+}
+  
+.project-button {
+    background-color: #3182ce;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1rem auto;
+    display: block;
+}
+  
+.project-button:hover {
+    background-color: #2b6cb0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: calc(100% - 2rem);
+    }
+}
