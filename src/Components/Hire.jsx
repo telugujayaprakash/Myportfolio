@@ -10,22 +10,6 @@ const Footer = () => {
             <p className="text-gray-400">Crafting web experiences with creativity and passion.</p>
           </div>
         </div>
-
-
-
-        {/* <div className="flex justify-center mt-4 md:mt-0">
-            <a href="https://github.com/your-profile" className="text-gray-400 hover:text-white mx-2">
-              <i className="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/your-profile" className="text-gray-400 hover:text-white mx-2">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/your-profile" className="text-gray-400 hover:text-white mx-2">
-              <i className="fab fa-twitter"></i>
-            </a>
-          </div> */}
-
-
         <div className="text-center mt-8">
           <div className="flex flex-col md:flex-row items-center">
             <a href="mailto:jayaprakash@gmail.com" className="text-gray-400 hover:text-white mb-2 md:mb-0 mx-2">
