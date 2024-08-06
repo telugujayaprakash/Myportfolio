@@ -27,25 +27,25 @@
 //   )
 // }
 import React from 'react';
-import './Projects.css'; // Create this file for custom styles
+import './Projects.css';
+import Storyimg from '../Assets/Story_site.png'
 
 export default function Projects() {
   return (
-    <section className="projects-section">
+    <section className="projects-section bg-gray-900">
       <div className="container">
         <h2 className="section-title">My Projects</h2>
         <div className="flex flex-wrap justify-center">
           <div className="project-card">
             <div className="image-container">
-              <img alt="content" className="project-image" src="https://dummyimage.com/800x400" />
+              <img alt="Story_Site" className="project-image" src={Storyimg} />
+              <img src="" alt="" srcset="" />
             </div>
-            <h3 className="project-title">Buy YouTube Videos</h3>
-            <p className="project-description">
-              Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.
-            </p>
-            <button className="project-button">View Project</button>
+            <h3 className="project-title">Story Confessions</h3>
+            <p className="project-description">Dive Into the Worlds of Wonder and Adventure Stories.</p>
+            <button className="project-button"><a href="https://storyconfessions.vercel.app" target='blank'>Visit Site</a></button>
           </div>
-          <div className="project-card">
+          {/* <div className="project-card">
             <div className="image-container">
               <img alt="content" className="project-image" src="https://dummyimage.com/800x400" />
             </div>
@@ -54,7 +54,7 @@ export default function Projects() {
               Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.
             </p>
             <button className="project-button">View Project</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

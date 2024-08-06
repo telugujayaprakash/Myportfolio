@@ -1,44 +1,27 @@
-// import React from 'react'
-
-// export default function Skills() {
-//   return (
-//     <div className='bg-gray-900 min-h-screen'>
-//       <div className="space-y-5 max-w-4xl mx-auto text-center">
-//         <h2 className="text-6xl text-white font-extrabold mx-auto md:text-5xl">
-//           Skills
-//         </h2>
-//         <p className="max-w-2xl mx-auto text-gray-400">
-//           <ul>
-//             <li>Python</li>
-//             <li>Javascript</li>
-//             <li>React Js</li>
-//             <li>Flutter Basics</li>
-//             <li>Java</li>
-//           </ul>
-//         </p>
-//       </div>
-//     </div>
-//   )
-// }
 import React from 'react';
 import './Skills.css';
+import py from '../Assets/python.png'
+import js from '../Assets/js.png'
+import java from '../Assets/java.png'
+import web from '../Assets/web.png'
+import react from '../Assets/atom.png'
 
 export default function Skills() {
   return (
-    <div className="skills-section">
+    <div className="skills-section bg-gray-900">
       <div className="skills-content">
         <h2 className="skills-title">Skills</h2>
         <div className="skills-grid">
           <div className="skill-card">
-            <div className="skill-icon">🐍</div>
+            <div className="skill-icon"><img src={py} alt="python"/></div>
             <div className="skill-name">Python</div>
           </div>
           <div className="skill-card">
-            <div className="skill-icon">🌐</div>
+            <div className="skill-icon"><img src={js} alt="" /></div>
             <div className="skill-name">JavaScript</div>
           </div>
           <div className="skill-card">
-            <div className="skill-icon">⚛️</div>
+            <div className="skill-icon"><img src={react} alt="" /></div>
             <div className="skill-name">React JS</div>
           </div>
           <div className="skill-card">
@@ -46,12 +29,12 @@ export default function Skills() {
             <div className="skill-name">Flutter Basics</div>
           </div>
           <div className="skill-card">
-            <div className="skill-icon">☕</div>
+            <div className="skill-icon"><img src={java} alt="" /></div>
             <div className="skill-name">Java</div>
           </div>
           <div className="skill-card">
-            <div className="skill-icon">📊</div>
-            <div className="skill-name">Data Analysis</div>
+            <div className="skill-icon"><img src={web} alt="" /></div>
+            <div className="skill-name">Web Development</div>
           </div>
         </div>
       </div>

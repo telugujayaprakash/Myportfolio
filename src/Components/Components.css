@@ -22,7 +22,7 @@
     list-style: none;
     left: 0;
     transform-origin: 100px;
-    transform: rotate(calc(360deg / 6 * var(--i)));
+    transform: rotate(calc(360deg / 4 * var(--i)));
     transition: 0.5s;
     transition-delay: calc(0.1s * var(--i));
     opacity: 0;
@@ -66,5 +66,8 @@
      height:40px;
     background-color: white ;
     border-radius: 50%;
-    transform: rotate(calc(360deg/-6 * var(--i)));
+    transform: rotate(calc(360deg/-4 * var(--i)));
+}
+.name{
+    font-family: Zodiak;
 }

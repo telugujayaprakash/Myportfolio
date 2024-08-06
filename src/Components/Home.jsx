@@ -4,10 +4,10 @@ import "./Components.css";
 export default function Home() {
     const style1 = { '--i': 1 };
     const style2 = { '--i': 2 };
-    const style3 = { '--i': 3 };
-    const style4 = { '--i': 4 };
-    const style5 = { '--i': 5 };
-    const style6 = { '--i': 6 };
+    // const style3 = { '--i': 3 };
+    const style4 = { '--i': 3 };
+    // const style5 = { '--i': 5 };
+    const style6 = { '--i': 4 };
 
     const [menuActive, setMenuActive] = useState(false);
 
@@ -17,36 +17,33 @@ export default function Home() {
 
     return (
         <div className="bg-gray-900 min-h-screen ">
-            <div className="flex items-center justify-between py-5 md:block">
+            {/* <div className="flex items-center justify-between py-5 md:block">
                 <h2 className="ml-5 text-4xl text-white">Jp</h2>
-            </div>
+            </div> */}
             <section className="relative">
                 <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
                     <div className="space-y-5 max-w-4xl mx-auto text-center">
-                        <h2 className="text-8xl text-white font-extrabold mx-auto md:text-15xl">
+                        {/* <h2 className="text-8xl text-white font-extrabold mx-auto md:text-15xl">
+                            I am
+                        </h2> */}
+                        <h2 className="text-8xl text-white font-extrabold mx-auto md:text-15xl name">
                             Jayaprakash
                         </h2>
-                        <div className={`menu ${menuActive ? 'active' : ''}`}>
-                            <div className="toggle" onClick={handleToggleClick}>
+                        <div className={`menu ${menuActive ? 'active' : ''}`} >
+                            <div className="toggle" title="Click" onClick={handleToggleClick}>
                                 <ion-icon name="link-outline" />
                             </div>
-                            <li style={style1}>
-                                <a href="#"><ion-icon name="logo-github" /></a>
+                            <li style={style1} >
+                                <a href="https://github.com/telugujayaprakash" target="blank" title="Github"><ion-icon name="logo-github"/></a>
                             </li>
                             <li style={style2}>
-                                <a href="#"><ion-icon name="logo-instagram" /></a>
-                            </li>
-                            <li style={style3}>
-                                <a href="#"><ion-icon name="logo-facebook" /></a>
+                                <a href="https://www.instagram.com/jayaprakash_317/" target="blank" title="instagram"><ion-icon name="logo-instagram" /></a>
                             </li>
                             <li style={style4}>
-                                <a href="#"><ion-icon name="logo-linkedin" /></a>
-                            </li>
-                            <li style={style5}>
-                                <a href="#"><ion-icon name="logo-whatsapp" /></a>
+                                <a href="www.linkedin.com/in/telugujayaprakash" target="blank" title="linkedin"><ion-icon name="logo-linkedin" /></a>
                             </li>
                             <li style={style6}>
-                                <a href="#"><ion-icon name="mail-unread-outline" /></a>
+                                <a href="mailto:jayaprakash96030@gmail.com" target="blank" title="Mail"><ion-icon name="mail-unread-outline" /></a>
                             </li>
                         </div>
                     </div>
