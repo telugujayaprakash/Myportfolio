@@ -1,7 +1,36 @@
-* {
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
     color: #c0bda5;
-  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: #c0bda5;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.toggle-btn:hover {
+  color: gray;
+}

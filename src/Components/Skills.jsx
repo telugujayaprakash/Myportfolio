@@ -10,7 +10,7 @@ export default function Skills() {
   return (
     <div className="skills-section py-12">
       <div className="skills-content max-w-screen-lg">
-      <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-10 ">&lt;Skills&gt;</h2>
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-10 ">&lt;Skills&gt;</h2>
         <div className="skills-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           <div className="skill-card  rounded-lg p-4 flex flex-col items-center">
             <div className="skill-icon mb-4"><img src={py} alt="python" className="w-16 h-16"/></div>
@@ -37,7 +37,7 @@ export default function Skills() {
             <div className="skill-name   text-lg font-semibold">Web Development</div>
           </div>
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-10">&lt;/Skills&gt;</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mt-10">&lt;/Skills&gt;</h2>
       </div>
     </div>
   );

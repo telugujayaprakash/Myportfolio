@@ -1,15 +1,16 @@
 import React from 'react';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import Profile from '../Assets/pp.jpg';
+import '../App.css'
 
 export default function Home() {
   return (
-    <div className="bg-black text-white h-screen flex flex-col">
-      <Navbar />
+    <div className="h-screen flex flex-col">
+      {/* <Navbar /> */}
       <div className="flex flex-1 items-center justify-between px-12 w-full">
         <div>
-          <h2 className="text-7xl font-bold text-white mb-2">Hi</h2>
-          <h1 className="text-7xl font-bold text-white">This is Jayaprakash</h1>
+          <h2 className="text-7xl font-bold mb-2">Hi</h2>
+          <h1 className="text-7xl font-bold">This is Jayaprakash</h1>
         </div>
         <div className="flex flex-col items-center justify-center text-center mr-10">
           <div className="border-2 border-dashed border-gray-500 p-4 rounded-lg">
